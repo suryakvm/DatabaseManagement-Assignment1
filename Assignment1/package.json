@@ -1,0 +1,27 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "First Assignment of Database Management",
+  "main": "index.js",
+  "dependencies": {
+    "sqlite3": "^4.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suryakvm/DatabaseManagement-Assignment1.git"
+  },
+  "keywords": [
+    "Database",
+    "Assignment"
+  ],
+  "author": "Surya Teja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suryakvm/DatabaseManagement-Assignment1/issues"
+  },
+  "homepage": "https://github.com/suryakvm/DatabaseManagement-Assignment1#readme"
+}
