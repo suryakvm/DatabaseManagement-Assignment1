@@ -44,7 +44,7 @@ db.serialize(function() {
     console.log("Department Name:: "+row.DEPT_NAME );
   }); 
   
-  db.each("SELECT d.DEPT_NAME, c.CAPACITY from Department d, classroom c where d.BUILDING = c.BUILDING", function(err,row){
+  db.each("SELECT d.DEPT_NAME, SUM(c.CAPACITY) CAPACITY FROM DEPARTMENT d INNER JOIN CLASSROOM c WHERE d.BUILDING = c.BUILDING GROUP BY d.DEPT_NAME", function(err,row){
     console.log("Department Name:: "+row.DEPT_NAME+" and Capacity: "+row.CAPACITY);
   })
   
